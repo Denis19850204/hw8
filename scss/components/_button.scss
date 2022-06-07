@@ -1,0 +1,144 @@
+// hero button
+
+.button {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    border: transparent;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+    background-color: var(--hover-button-color);
+    color: var(--secondary-color);
+    }
+}
+
+// modal button
+
+.modal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: var(--secondary-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover{
+    fill: var(--accent-color);
+    cursor: pointer;
+    }
+}
+
+// form button
+
+.form-wrapper-btn {
+    font-family: Roboto;
+    font-style: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    box-shadow: 0px 4px 4px 0px #00000026;
+
+    border: transparent;
+    border-radius: 4px;
+    padding: 10px 55px;
+
+    cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+    background-color: var(--hover-button-color);
+    }
+}
+
+// form footer button
+
+.form-btn {
+    display: inline-flex;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-right: 29px;
+    padding-bottom: 10px;
+    padding-left: 28px;
+    border: transparent;
+    border-radius: 4px;
+    margin-left: 12px;
+
+    &:hover,
+    &:focus{
+      background-color: var(--hover-button-color);
+    }
+}
+
+// portfolio button
+
+.current-button {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: transparent;
+}
+
+.portfolio-button {
+    background-color: var(--bkg-color);
+    color: var(--tittle-color);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus{
+        background-color: var(--accent-color);
+        color: var(--secondary-color);
+        box-shadow: 0px 4px 4px 0px #00000040;
+        }
+}
+
