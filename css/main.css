@@ -52,10 +52,28 @@ body {
 }
 
 .container {
-  margin: 0 auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .subtitle {
@@ -769,19 +787,64 @@ textarea {
 }
 
 .benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.benefits__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .benefits__item {
   display: block;
-  width: 270px;
+}
+
+@media screen and (min-width: 480px) {
+  .benefits__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
 }
 
 .benefits-icon {
@@ -811,6 +874,12 @@ textarea {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 480px) {
+  .benefits-icon__subtitle {
+    text-align: center;
+  }
+}
+
 .benefits-icon__text {
   font-family: 'Roboto';
   font-size: 14px;
@@ -818,8 +887,10 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .work {
