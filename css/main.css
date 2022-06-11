@@ -311,8 +311,6 @@ body {
 
 .modal-wrapper {
   position: absolute;
-  width: 528px;
-  height: 581px;
   top: 50%;
   left: 50%;
   background-color: var(--secondary-color);
@@ -322,6 +320,20 @@ body {
   transition: opacity 400ms ease-in-out 200ms, -webkit-transform 400ms ease-in-out 200ms;
   transition: transform 400ms ease-in-out 200ms, opacity 400ms ease-in-out 200ms;
   transition: transform 400ms ease-in-out 200ms, opacity 400ms ease-in-out 200ms, -webkit-transform 400ms ease-in-out 200ms;
+}
+
+@media screen and (min-width: 480px) {
+  .modal-wrapper {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-wrapper {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .wrapper-text {
@@ -338,10 +350,11 @@ textarea {
 }
 
 .form-wrapper {
-  width: 448px;
+  width: 100%;
 }
 
 .form-field {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,6 +384,13 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -406,10 +426,6 @@ textarea {
 
 .form-textarea:hover, .form-textarea:focus {
   border-color: var(--accent-color);
-}
-
-.form-field {
-  position: relative;
 }
 
 .form-icon {
@@ -477,22 +493,16 @@ textarea {
 }
 
 textarea {
-  width: 448px;
+  width: 100%;
   height: 120px;
   resize: none;
 }
 
-.form-agree {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 448px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .form-agree-text {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .checkbox {
@@ -819,8 +829,6 @@ textarea {
 
 .hero {
   background-color: var(--hero-bkg-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
   max-width: 1600px;
   height: 600px;
@@ -833,15 +841,41 @@ textarea {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 1199px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 .tittle {
   color: var(--secondary-color);
   font-family: 'Roboto';
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .tittle {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tittle {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .benefits {

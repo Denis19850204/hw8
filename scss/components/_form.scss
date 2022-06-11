@@ -6,11 +6,11 @@ textarea {
 }
 
 .form-wrapper {
-    width: 448px;
+    width: 100%;
 }
 
 .form-field {
-
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -28,6 +28,9 @@ textarea {
 
 .form-agree {
     display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
 }
 
@@ -61,10 +64,6 @@ textarea {
     &:focus{
         border-color: var(--accent-color);
     }
-}
-
-.form-field {
-    position: relative;
 }
 
 .form-icon {
@@ -109,17 +108,16 @@ textarea {
 }
 
 textarea {
-    width: 448px;
+    width: 100%;
     height: 120px;
     resize: none;
 }
 
-.form-agree {
-    display: flex;
-    width: 448px;
-
-    align-items: center;
-    justify-content: center;
+.form-agree-text{
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+            font-size: 12px;
+            line-height: 1.17;
+        }
 }
 
 .checkbox {
