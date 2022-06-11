@@ -167,16 +167,41 @@ textarea {
 // form footer
 
 .form-list {
+    @media screen and (max-width: 1199px) {
+            width: 100%;
+        }
 
-    width: 570px;
+    @media screen and (min-width: 1200px) {
+            margin-left: 93px;
+        }
+    
 }
 
 .form-text {
+    @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
+
     margin-bottom: 20px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+        
+        
 }
 
 .form-footer {
-    display: flex;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+            display: flex;
+        }
+    
+    
 }
 
 .form-btn-icon {
@@ -185,7 +210,23 @@ textarea {
 }
 
 .footer-input {
-    width: 358px;
+    @media screen and (max-width: 480px) {
+            width: 100%;
+        }
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+    
+        }
+
+    @media screen and (min-width: 1200px) {
+            width: 358px;
+            margin-bottom: 0;
+        }
+
+    width: 450px;
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -198,4 +239,5 @@ textarea {
     font-size: 16px;
     line-height: 1.25;
     color: var(--secondary-color);
+    margin-bottom: 20px;    
 }
