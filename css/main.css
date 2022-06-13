@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --main-text-color: #757575;
   --tittle-color: #212121;
@@ -35,7 +36,8 @@ p {
 }
 
 .mob-menu-nav-link,
-.mob-menu-contact-link,
+.mob-menu-contact-link-mail,
+.mob-menu-contact-link-tel,
 .mob-menu-social-link {
   text-decoration: none;
 }
@@ -746,7 +748,7 @@ textarea {
     font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
-    color: #212121;
+    color: var(--tittle-color);
   }
 }
 
@@ -764,6 +766,50 @@ textarea {
 
 .mob-menu-contact-list {
   margin-top: auto;
+  margin-bottom: 64px;
+}
+
+.mob-menu-contact-item {
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .mob-menu-contact-link-tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    color: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mob-menu-contact-link-mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    color: var(--main-text-color);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mob-menu-social-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.mob-menu-social-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.mob-menu-social-link::after {
+  content: "рус";
+  width: 10px;
+  height: 22px;
+  margin-right: 5px;
+  fill: black;
+  background-color: black;
 }
 
 .header {
