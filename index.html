@@ -28,6 +28,17 @@
       <div class="container page-header">
         <nav class="navigation">
           <a class="logo" lang="en" href="./index.html"> <span class="logoweb">Web</span>Studio</a>
+          <button type="button" class="mob-btn is-open" data-menu-button>
+            <svg 
+            width="40" 
+            height="40" 
+            aria-label="переключатель моб меню">
+
+              <use class="icon-menu" href="./img/symbol-defs.svg#icon-menu_24px"></use>
+              
+            </svg>
+          </button>
+
           <ul class="nav-list">
             <li class="nav-item"><a class="nav-list-link current" href="">Студия</a></li>
             <li class="nav-item"><a class="nav-list-link" href="./portfolio.html">Портфолио</a></li>
@@ -56,7 +67,14 @@
 
 
       <!-- Мобильное меню -->
-      <div class="mob-menu">
+      <div class="mob-menu" data-menu>
+        <div class="mob-menu-thumb">
+          
+          <button type="button" class="mob-menu-btn">
+          <svg width="40" hight="40">
+            <use class="icon-close" href="./img/symbol-defs.svg#icon-close_24px"></use>
+          </svg>
+        </button>
 
         <ul class="mob-menu-nav-list">
           <li class="mob-menu-nav-item">
@@ -108,6 +126,8 @@
                   </li>
 
             </ul>       
+          </div>
+        
       </div>
 
 
@@ -576,5 +596,6 @@
     </footer> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobmenu.js"></script>
   </body>
 </html>
