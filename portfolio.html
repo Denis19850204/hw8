@@ -19,8 +19,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
-    <link rel="stylesheet" href="./css/main.min.css">
+
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -29,16 +29,25 @@
       <div class="container page-header">
         <nav class="navigation">
           <a class="logo" lang="en" href="./index.html"> <span class="logoweb">Web</span>Studio</a>
+          <button type="button" class="mob-btn" mob-modal-open>
+            <svg width="24" height="16">
+              <use class="icon-menu" href="./img/symbol-defs.svg#icon-menu_24px"></use>
+            </svg>
+          </button>
+
           <ul class="nav-list">
             <li class="nav-item"><a class="nav-list-link" href="./index.html">Студия</a></li>
-            <li class="nav-item"><a class="nav-list-link current" href="">Портфолио</a></li>
+            <li class="nav-item">
+              <a class="nav-list-link current" href="./portfolio.html">Портфолио</a>
+            </li>
             <li class="nav-item"><a class="nav-list-link" href="">Контакты</a></li>
           </ul>
         </nav>
+
         <ul class="contact-list">
           <li class="contact-item">
             <a class="contact-list-link" href="mailto:info@devstudio.com">
-              <svg class="contact-icon" width="16" height="12">
+              <svg class="contact-icon envelope" width="16" height="12">
                 <use href="./img/symbol-defs.svg#icon-envelope2"></use>
               </svg>
               info@devstudio.com</a
@@ -46,13 +55,68 @@
           </li>
           <li class="contact-item">
             <a class="contact-list-link" href="tel:+380961111111">
-              <svg class="contact-icon" width="10" height="16">
+              <svg class="contact-icon mobphone" width="10" height="16">
                 <use href="./img/symbol-defs.svg#icon-smartphone2"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+      </div>
+
+      <!-- Мобильное меню -->
+      <div class="backdrop is-hidden" mob-modal>
+        <div class="mob-menu">
+          <button type="button" class="mob-menu-btn" mob-modal-close>
+            <svg width="19" height="19">
+              <use class="icon-close" href="./img/symbol-defs.svg#icon-close_24px"></use>
+            </svg>
+          </button>
+
+          <ul class="mob-menu-nav-list">
+            <li class="mob-menu-nav-item">
+              <a class="mob-menu-nav-link" href="./index.html">Студия</a>
+            </li>
+
+            <li class="mob-menu-nav-item">
+              <a class="mob-menu-nav-link current" href="./portfolio.html">Портфолио</a>
+            </li>
+
+            <li class="mob-menu-nav-item">
+              <a class="mob-menu-nav-link" href="">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="mob-menu-contact-list">
+            <li class="mob-menu-contact-item">
+              <a class="mob-menu-contact-link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+
+            <li class="mob-menu-contact-item">
+              <a class="mob-menu-contact-link-mail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mob-menu-social-list">
+            <li class="mob-menu-social-item">
+              <a class="mob-menu-social-link" href="" aria-label="">Instagram</a>
+            </li>
+
+            <li class="mob-menu-social-item">
+              <a class="mob-menu-social-link" href="" aria-label="">Twitter</a>
+            </li>
+
+            <li class="mob-menu-social-item">
+              <a class="mob-menu-social-link" href="" aria-label="">Facebook</a>
+            </li>
+
+            <li class="mob-menu-social-item">
+              <a class="mob-menu-social-link" href="" aria-label="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -324,7 +388,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer-social">
+        <div class="footer-social-box">
           <p class="footer-subtitle">присоединяйтесь</p>
           <ul class="footer-social list">
             <li class="footer-social-list">
@@ -357,21 +421,21 @@
             </li>
           </ul>
         </div>
-    
-    
+
         <div class="form-list">
           <p class="form-text">Подпишитесь на рассылку</p>
           <form class="form-footer" name="form-footer" method="post">
-            <input class="footer-input" type="text" name="email" placeholder="E-mail">
-            <button class="form-btn" type="button">Подписаться
+            <input class="footer-input" type="text" name="email" placeholder="E-mail" />
+            <button class="form-btn" type="button">
+              Подписаться
               <svg class="form-btn-icon" width="24" height="24">
                 <use href="./img/symbol-defs.svg#icon-icon-send-1"></use>
               </svg>
             </button>
+          </form>
         </div>
-        </form>
-    
       </div>
     </footer>
+    <script src="./js/mobmenu.js"></script>
   </body>
 </html>

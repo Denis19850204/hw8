@@ -1,21 +1,19 @@
-.backdrop{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;    
-
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .mob-menu {
   padding: 48px 40px;
   background-color: #ffffff;
   display: flex;
-  flex-direction: column;    
-  width: 480px;
-  height: 796px;  
-
+  flex-direction: column;
+  width: 100%;
+  height: 796px;
 }
 
 .mob-menu-nav-list {
@@ -25,7 +23,6 @@
     font-size: 40px;
     line-height: 1.17;
     color: var(--tittle-color);
-    
   }
 }
 
@@ -47,19 +44,19 @@
   @media screen and (max-width: 767px) {
     margin-top: auto;
     margin-bottom: 64px;
-    }  
-  
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .mob-menu-contact-item {
   @media screen and (max-width: 767px) {
-      margin-bottom: 32px;
-    }
-  
+    margin-bottom: 32px;
+  }
 }
 
 .mob-menu-contact-link-tel {
-   @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     font-weight: 500;
     font-size: 34px;
     line-height: 1.17;
@@ -79,8 +76,8 @@
 .mob-menu-social-list {
   @media screen and (max-width: 767px) {
     display: flex;
+    flex-wrap: wrap;
   }
-   
 }
 
 .mob-menu-social-item {
@@ -94,13 +91,11 @@
     border-right: 1px solid rgba(33, 33, 33, 0.2);
     margin-right: 10px;
   }
-
 }
 
 .mob-menu-social-link {
   color: inherit;
 }
-
 
 .mob-btn,
 .mob-menu-btn {
@@ -109,40 +104,34 @@
   padding: 0;
   border: none;
   background-color: transparent;
-    
 }
 
-.mob-menu-btn{
+.mob-menu-btn {
   position: absolute;
   top: 11px;
   right: 11px;
-
 }
 
-.mob-btn{
+.mob-btn {
   @media screen and (min-width: 767px) {
-      display: none;
-  
-    }
+    display: none;
+  }
 }
 
-.icon-menu{
-
-   fill: #000000;
+.icon-menu {
+  fill: #000000;
 
   &:hover,
-  &:focus{
-    fill: var(--accent-color)
+  &:focus {
+    fill: var(--accent-color);
   }
-  
 }
 
-.icon-close{
+.icon-close {
   fill: var(--tittle-color);
 
   &:hover,
-    &:focus {
-      fill: var(--accent-color)
-    }
-    
+  &:focus {
+    fill: var(--accent-color);
+  }
 }

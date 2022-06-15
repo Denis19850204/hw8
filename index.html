@@ -19,8 +19,7 @@
       referrerpolicy="no-referrer"
     />
 
-    
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Шапка сайта-->
@@ -28,13 +27,9 @@
       <div class="container page-header">
         <nav class="navigation">
           <a class="logo" lang="en" href="./index.html"> <span class="logoweb">Web</span>Studio</a>
-          <button type="button" class="mob-btn" mob-modal-open >
-            <svg 
-            width="24" 
-            height="16">
-
+          <button type="button" class="mob-btn" mob-modal-open>
+            <svg width="24" height="16">
               <use class="icon-menu" href="./img/symbol-defs.svg#icon-menu_24px"></use>
-              
             </svg>
           </button>
 
@@ -56,7 +51,7 @@
           </li>
           <li class="contact-item">
             <a class="contact-list-link" href="tel:+380961111111">
-              <svg class="contact-icon phone" width="10" height="16">
+              <svg class="contact-icon mobphone" width="10" height="16">
                 <use href="./img/symbol-defs.svg#icon-smartphone2"></use>
               </svg>
               +38 096 111 11 11</a
@@ -65,74 +60,60 @@
         </ul>
       </div>
 
-
       <!-- Мобильное меню -->
       <div class="backdrop is-hidden" mob-modal>
+        <div class="mob-menu">
+          <button type="button" class="mob-menu-btn" mob-modal-close>
+            <svg width="19" height="19">
+              <use class="icon-close" href="./img/symbol-defs.svg#icon-close_24px"></use>
+            </svg>
+          </button>
 
-      <div class="mob-menu">  
-        
-      <button type="button" class="mob-menu-btn" mob-modal-close>
-        <svg width="19" height="19">        
-          <use class="icon-close" href="./img/symbol-defs.svg#icon-close_24px"></use>
-        </svg>
-      </button>  
-        
           <ul class="mob-menu-nav-list">
+            <li class="mob-menu-nav-item">
+              <a class="mob-menu-nav-link current" href="./index.html">Студия</a>
+            </li>
 
-          <li class="mob-menu-nav-item">
-            <a class="mob-menu-nav-link current"  href="">Студия</a>
-          </li>
+            <li class="mob-menu-nav-item">
+              <a class="mob-menu-nav-link" href="./portfolio.html">Портфолио</a>
+            </li>
 
-          <li class="mob-menu-nav-item">
-            <a class="mob-menu-nav-link" href="">Портфолио</a>
-          </li>
-
-          <li class="mob-menu-nav-item">
-            <a class="mob-menu-nav-link" href="">Контакты</a>
-          </li>
-        </ul>
-
-          
-          <ul class="mob-menu-contact-list">
-              
-              <li class="mob-menu-contact-item">
-                <a class="mob-menu-contact-link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-              </li>
-
-              <li class="mob-menu-contact-item">
-                <a class="mob-menu-contact-link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-              </li>
+            <li class="mob-menu-nav-item">
+              <a class="mob-menu-nav-link" href="">Контакты</a>
+            </li>
           </ul>
-          
-          
-            <ul class="mob-menu-social-list">
 
-                  <li class="mob-menu-social-item">
-                    <a class="mob-menu-social-link" href="" 
-                     aria-label="">Instagram</a>
-                  </li>
+          <ul class="mob-menu-contact-list">
+            <li class="mob-menu-contact-item">
+              <a class="mob-menu-contact-link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
 
-                  <li class="mob-menu-social-item">
-                    <a class="mob-menu-social-link" href="" 
-                     aria-label="">Twitter</a>
-                  </li>
+            <li class="mob-menu-contact-item">
+              <a class="mob-menu-contact-link-mail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
 
-                  <li class="mob-menu-social-item">
-                    <a class="mob-menu-social-link" href=""
-                     aria-label="">Facebook</a>
-                  </li>
+          <ul class="mob-menu-social-list">
+            <li class="mob-menu-social-item">
+              <a class="mob-menu-social-link" href="" aria-label="">Instagram</a>
+            </li>
 
-                  <li class="mob-menu-social-item">
-                    <a class="mob-menu-social-link" href=""
-                     aria-label="">LinkedIn</a>
-                  </li>
+            <li class="mob-menu-social-item">
+              <a class="mob-menu-social-link" href="" aria-label="">Twitter</a>
+            </li>
 
-            </ul>       
-       </div>
-        
+            <li class="mob-menu-social-item">
+              <a class="mob-menu-social-link" href="" aria-label="">Facebook</a>
+            </li>
+
+            <li class="mob-menu-social-item">
+              <a class="mob-menu-social-link" href="" aria-label="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
-
-
     </header>
     <main>
       <!--Оглавление -->
@@ -266,7 +247,6 @@
         <div class="container">
           <h2 class="work__subtitle subtitle">Чем мы занимаемся</h2>
           <ul class="work__list list">
-
             <li class="work__item item">
               <img
                 class="work__image image"
@@ -301,12 +281,12 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
       <!-- Наша команда -->
       <section class="team">
         <div class="container">
           <h2 class="subtitle">Наша команда</h2>
-          <ul class="list team-list ">
+          <ul class="list team-list">
             <li class="team-item">
               <img
                 class="image-team"

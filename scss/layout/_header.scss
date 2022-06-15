@@ -4,8 +4,8 @@
 
 .page-header {
   @media screen and (max-width: 1199px) {
-      align-items: center;
-    }
+    align-items: center;
+  }
 
   display: flex;
 }
@@ -13,7 +13,6 @@
 .navigation {
   display: flex;
   align-items: center;
-  
 
   @media screen and (max-width: 767px) {
     width: 100%;
@@ -79,10 +78,9 @@
     display: none;
   }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      display: block;
-      
-    }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+  }
 
   display: flex;
   align-items: center;
@@ -91,14 +89,14 @@
 
 .contact-list-link {
   @media screen and (min-width: 1199px) {
-      padding-top: 32px;
-      padding-bottom: 32px;
-    }
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
-        @media screen and (max-width: 1199px) {
-        font-size: 12px;
-        line-height: 1.17;
-        }
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 
   // display: flex;
   color: var(--main-text-color);
@@ -119,38 +117,32 @@
 
 .contact-icon {
   @media screen and (max-width: 1199px) {
-      margin-right: 8px;
-      
-    }
+    margin-right: 8px;
+  }
   margin-right: 10px;
   fill: currentColor;
 }
 
- .envelope{
+.envelope {
   @media screen and (max-width: 1199px) {
-      width: 14px;
-      height: 10px;
-  
-    }
-
+    width: 14px;
+    height: 10px;
+  }
 }
 
-.phone{
+.mobphone {
   @media screen and (max-width: 1199px) {
-      width: 10px;
-      height: 14px;
-  
-    }
+    width: 10px;
+    height: 14px;
+  }
 }
 
 .contact-item:not(:last-child) {
   @media screen and (max-width: 1199px) {
-      margin-bottom: 10px;
-    }
+    margin-bottom: 10px;
+  }
 
-  @media screen and (min-width: 1199px){
-      margin-right: 50px;
-    }
-
-  
+  @media screen and (min-width: 1199px) {
+    margin-right: 50px;
+  }
 }
