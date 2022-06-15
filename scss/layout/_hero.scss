@@ -14,15 +14,28 @@
     text-align: center;
 
     max-width: 1600px;
-    height: 600px;
+    // height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../img/hero-photo.jpg);
-
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        @media screen and (max-width: 767px) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../img/hero-photo-sm.jpg);
+                   }
+        
+         @media screen and (min-width: 768px) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(../img/hero-photo-md.jpg);
+          }
+                
+          @media screen and (min-width: 1200px) {
+                    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                            url(../img/hero-photo-lg.jpg);
+                }
+    
 }
 
 .tittle {
