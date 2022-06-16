@@ -330,7 +330,6 @@ body {
 
 .modal-wrapper {
   position: absolute;
-  top: 50%;
   left: 50%;
   background-color: var(--secondary-color);
   border-radius: 4px;
@@ -341,7 +340,25 @@ body {
   transition: transform 400ms ease-in-out 200ms, opacity 400ms ease-in-out 200ms, -webkit-transform 400ms ease-in-out 200ms;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
+  .modal-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal-wrapper {
+    top: 55%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-wrapper {
+    top: 70%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal-wrapper {
     width: 450px;
     height: 609px;
@@ -1192,7 +1209,7 @@ textarea {
   display: block;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .benefits__item {
     margin-bottom: 30px;
   }
@@ -1243,7 +1260,7 @@ textarea {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .benefits-icon__subtitle {
     text-align: center;
   }
@@ -1321,7 +1338,7 @@ textarea {
   background-color: var(--bkg-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .team {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1377,6 +1394,9 @@ textarea {
   .team-item {
     width: 450px;
   }
+}
+
+@media screen and (max-width: 767px) {
   .team-item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1702,7 +1722,7 @@ textarea {
   padding-bottom: 99px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .portfolio {
     padding-top: 40px;
     padding-bottom: 60px;
@@ -1749,8 +1769,14 @@ textarea {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .portf-link:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .portf-link:nth-child(-n + 4) {
     margin-bottom: 15px;
   }
 }
