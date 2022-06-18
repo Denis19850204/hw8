@@ -1,7 +1,7 @@
 .team {
   background-color: var(--bkg-color);
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -17,7 +17,7 @@
     display: flex;
   }
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 767.98px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -34,18 +34,18 @@
   border: transparent;
   box-shadow: 0px 4px 4px 0px #00000040;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 767.98px) {
       width: 450px;  
       
     }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
         &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     width: 354px;
 
     margin-right: 30px;

@@ -3,7 +3,7 @@
 }
 
 .page-header {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     align-items: center;
   }
 
@@ -14,14 +14,14 @@
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     width: 100%;
     justify-content: space-between;
   }
 }
 
 .nav-list {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
 
@@ -74,11 +74,11 @@
 }
 
 .contact-list {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     display: block;
   }
 
@@ -93,7 +93,9 @@
     padding-bottom: 32px;
   }
 
-  @media screen and (max-width: 1199px) {
+
+
+  @media screen and (max-width: 1199.98px) {
     font-size: 12px;
     line-height: 1.17;
   }
@@ -115,8 +117,22 @@
   }
 }
 
+.contact-list-link.email{
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+      padding-top: 20px;
+      
+    }
+}
+
+.contact-list-link.number{
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+      padding-bottom: 20px;
+  
+    }
+}
+
 .contact-icon {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     margin-right: 8px;
   }
   margin-right: 10px;
@@ -124,25 +140,25 @@
 }
 
 .envelope {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     width: 14px;
     height: 10px;
   }
 }
 
 .mobphone {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     width: 10px;
     height: 14px;
   }
 }
 
 .contact-item:not(:last-child) {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {    
     margin-bottom: 10px;
   }
 
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: 1199.98px) {
     margin-right: 50px;
   }
 }

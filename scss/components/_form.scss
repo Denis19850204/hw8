@@ -114,7 +114,7 @@ textarea {
 }
 
 .form-agree-text{
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @media screen and (min-width: 480px) and (max-width: 1199.98px) {
             font-size: 12px;
             line-height: 1.17;
         }
@@ -165,7 +165,7 @@ textarea {
 // form footer
 
 .form-list {
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1199.98px) {
             width: 100%;
         }
 
@@ -176,7 +176,7 @@ textarea {
 }
 
 .form-text {
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1199.98px) {
             text-align: center;
         }
 
@@ -212,7 +212,7 @@ textarea {
             width: 100%;
         }
     
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
             display: block;
             margin-right: auto;
             margin-left: auto;
