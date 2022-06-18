@@ -1031,6 +1031,9 @@ textarea {
 }
 
 .contact-list-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   color: var(--main-text-color);
   text-decoration: none;
   font-family: 'Roboto';

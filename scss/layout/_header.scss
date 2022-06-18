@@ -88,6 +88,7 @@
 }
 
 .contact-list-link {
+  
   @media screen and (min-width: 1199px) {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -100,7 +101,7 @@
     line-height: 1.17;
   }
 
-  
+  display: inline-flex;
   color: var(--main-text-color);
   text-decoration: none;
   font-family: 'Roboto';
@@ -121,12 +122,14 @@
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
       padding-top: 20px;
       
+      
     }
 }
 
 .contact-list-link.number{
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
       padding-bottom: 20px;
+      
   
     }
 }
