@@ -53,6 +53,9 @@
 .card-list {
   display: flex;
   flex-wrap: wrap;
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  margin: -15px;
+  }
 }
 
 .work-list {
@@ -65,9 +68,8 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-    &:nth-child(2n + 1) {
-      margin-right: 30px;
-    }
+    
+    margin: 15px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -88,17 +90,12 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
-    }
-  }
-  margin-bottom: 30px;
+   margin-bottom: 30px;
   background-color: var(--secondary-color);
 }
 
 .work-link {
-  // display: block;
+  
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -172,7 +169,10 @@
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
-  flex-grow: 1;
+
+ 
+        flex-grow: 1;
+  
 }
 
 .subtitle-work {
