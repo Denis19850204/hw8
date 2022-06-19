@@ -165,6 +165,11 @@ textarea {
 // form footer
 
 .form-list {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    
+                margin-top: 60px;
+            }
+
     @media screen and (max-width: 1199.98px) {
             width: 100%;
         }
